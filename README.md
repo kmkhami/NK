@@ -6,3 +6,4 @@ This is a repository designed for an online supplement store using Express.js, N
 * Linux or Windows WSL 
 * github account 
 * node.js installed 
+* [meeting link](https://www.when2meet.com/?12384152-toS24)
