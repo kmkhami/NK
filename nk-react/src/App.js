@@ -4,32 +4,40 @@ import './App.css';
 import axios from 'axios'; 
 
 function App() {
-  const [data, setData] = useState(null);
+  const [localMsg, setLocalMsg] = useState(null);
   const [productList, setProductList] = useState(null); 
+  const [isLoading, setLoading] = useState(true); 
   
 
   useEffect(() => {
-    const commerce_api_key = process.env.COMMERCE_API_KEY; 
+    const commerce_api_key = process.env.REACT_APP_COMMERCE_API_KEY; 
     const commerce_base_url = 'https://api.chec.io/v1'; 
 
     fetch("/api")
       .then((res) => res.json())
-      .then((data) => setData(data.message));
+      .then((localMsg) => setLocalMsg(localMsg.message));
 
     axios.get(commerce_base_url + '/products', { 
       headers: {
         'X-Authorization': commerce_api_key
       }
     })
-      .then((productList) => setProductList(productList.message))
+    .then(productList => {
+      setProductList(productList.data.meta.pagination.total);
+      setLoading(false);
+    })
   }, []);
+
+  if(isLoading) {
+    return <div className='App'>Loading...</div>
+  }
 
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>{!data ? "Loading..." : data}</p>
-        <p>{!productList ? "Loading Products...": productList} </p>
+        <p>{!localMsg ? "Loading..." : localMsg}</p>
+        <p>{productList} Current Products Created</p>
       </header>
     </div>
   );
