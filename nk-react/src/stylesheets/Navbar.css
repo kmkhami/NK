@@ -42,11 +42,17 @@
 
 #text-logo {
     padding-left: 10%; 
-    margin-right: 15%; 
+    margin-right: 20%; 
     font-family: 'Monoton', cursive;
     color: var(--red); 
     font-size: 64px; 
     text-decoration: none;
+}
+
+@media (max-width: 1390px) {
+    #text-logo {
+        margin-right: 15%; 
+    }
 }
 
 @media (max-width: 1130px) {
