@@ -16,6 +16,30 @@
     border-bottom: 1px solid var(--gray);  
 }
 
+@media (max-width: 950px) {
+    .top-navbar {
+        justify-content: center;
+    }
+
+    span#text-logo {
+        padding-left: 0px; 
+        margin-right: 50px;
+    }
+
+    a#text-logo {
+        font-size: 48px;
+    }
+
+    .nav-menu-desktop a{
+        display: none;
+    }
+
+    div.navbar-icons {
+        margin-left: 0px; 
+        margin-top: 8px;
+    }
+}
+
 #text-logo {
     padding-left: 10%; 
     margin-right: 15%; 
@@ -37,12 +61,12 @@
     }
 }
 
-.nav-menu {
+.nav-menu-desktop {
     display: flex; 
     flex-direction: row;
 }
 
-.nav-menu a {
+.nav-menu-desktop a {
     text-decoration: none; 
     color: var(--black); 
     margin-left: 15px; 
@@ -52,7 +76,7 @@
     border-bottom: 2px solid var(--floral-white); 
 }
 
-.nav-menu a:hover {
+.nav-menu-desktop a:hover {
     color: var(--dark-red);
     border-bottom: 2px solid var(--dark-red); 
 }

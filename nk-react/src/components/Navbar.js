@@ -9,7 +9,7 @@ class Navbar extends Component {
         return (
             <div class="top-navbar"> 
                 <span id="text-logo"><a id="text-logo" href="localhost:3000"> NK </a></span>
-                <div class='nav-menu'>
+                <div class='nav-menu-desktop'>
                     <a href='localhost:3000'> shop </a>
                     <a href='localhost:3000'> affiliates </a>
                     <a href='localhost:3000'> articles </a>
