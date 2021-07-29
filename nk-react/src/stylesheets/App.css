@@ -1,0 +1,7 @@
+:root {
+    --floral-white: #FDF9ED;
+}
+
+html {
+    background: var(--floral-white); 
+}
