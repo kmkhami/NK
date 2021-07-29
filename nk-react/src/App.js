@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import React, { useState, useEffect } from 'react';
-import './App.css';
+import Navbar from './components/Navbar.js'
+import './stylesheets/App.css';
 import axios from 'axios'; 
 
 function App() {
@@ -35,9 +36,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <Navbar />
+        {/*img src={logo} className="App-logo" alt="logo" />
         <p>{!localMsg ? "Loading..." : localMsg}</p>
-        <p>{productList} Current Products Created</p>
+        <p>{productList} Current Products Created</p> --> */
+        }
       </header>
     </div>
   );
