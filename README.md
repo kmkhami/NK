@@ -7,3 +7,4 @@ This is a repository designed for an online supplement store using Express.js, N
 * github account 
 * node.js installed 
 * [meeting link](https://www.when2meet.com/?12384152-toS24)
+* [demo recording](http://somup.com/criOQbYUzc)
