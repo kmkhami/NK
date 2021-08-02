@@ -2,7 +2,7 @@
   "name": "nk-react",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:3001",
+  "proxy": "https://nk-kmkhami.vercel.app/",
   "dependencies": {
     "@chec/commerce.js": "^2.7.2",
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
