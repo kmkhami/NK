@@ -1,0 +1,61 @@
+:root {
+    --light-grey: #DDDDDD; 
+    --floral-white: #FDF9ED;
+    --black: #000000; 
+}
+
+#flyoutMenu {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: transform .3s cubic-bezier(0.25, 0.1, 0.25, 1.0);
+    overflow: scroll;
+    z-index: 1000;
+    backdrop-filter: blur(3px);
+    display: flex; 
+    flex-direction: row;
+}
+
+#flyout-nav {
+    width: 80%; 
+    background-color: var(--floral-white); 
+    box-shadow: 3px 0px 2rem rgba(0, 0, 0, .75);
+    display: flex; 
+    flex-direction: column;
+}
+
+#flyout-nav-items {
+    height: 60%; 
+    margin-top: 10%;
+}
+
+#flyout-nav-fixed {
+    height: 40%; 
+    background-color: var(--light-grey);
+}
+
+#FC-times {
+    font-size: 36px; 
+    color: var(--floral-white); 
+}
+
+#FC-times .fi-padding {
+    margin-top: 25px; 
+}
+
+#flyout-close {
+    width: 20%; 
+    background-color: rgba(0, 0, 0, .5);
+    text-align: center;
+}
+   
+#flyoutMenu.hide {
+    transform: translate3d(-100vw, 0, 0);
+}
+
+#flyoutMenu.show {
+    transform: translate3d(0vw, 0, 0);
+    overflow: hidden;
+}
