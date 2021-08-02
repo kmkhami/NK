@@ -39,12 +39,12 @@ class Navbar extends Component {
                 </div> 
                 <MobileMenu handleMouseDown={this.handleMouseDown} menuVisibility={this.state.visible}/>
                 <MobileMenu />
-                <span id="text-logo"><a id="text-logo" href="localhost:3000"> NK </a></span>
+                <span id="text-logo"><a id="text-logo" href="#"> NK </a></span>
                 <div class='nav-menu-desktop'>
-                    <a href='localhost:3000'> shop </a>
-                    <a href='localhost:3000'> affiliates </a>
-                    <a href='localhost:3000'> articles </a>
-                    <a href='localhost:3000'> help </a>
+                    <a href='#'> shop </a>
+                    <a href='#'> affiliates </a>
+                    <a href='#'> articles </a>
+                    <a href='#'> help </a>
                 </div>
                 <div class="navbar-icons"> 
                     <FontAwesomeIcon id="FAIcon" icon={faUserCircle} />
