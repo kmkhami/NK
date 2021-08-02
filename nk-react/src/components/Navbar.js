@@ -34,7 +34,9 @@ class Navbar extends Component {
     render() {
         return (
             <div class="top-navbar"> 
-                <HamburgerButton handleMouseDown={this.handleMouseDown}/>
+                <div id="nav-button"> 
+                    <HamburgerButton handleMouseDown={this.handleMouseDown}/>
+                </div> 
                 <MobileMenu handleMouseDown={this.handleMouseDown} menuVisibility={this.state.visible}/>
                 <MobileMenu />
                 <span id="text-logo"><a id="text-logo" href="localhost:3000"> NK </a></span>
