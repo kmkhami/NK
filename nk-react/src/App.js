@@ -30,7 +30,11 @@ function App() {
   }, []);
 
   if(isLoading) {
-    return <div className='App'>Loading...</div>
+    return <div className='App'>
+      <span id="loading-icon">
+        <i class="fi-7x fi-xwsuxl-reload fi-spin"></i>
+      </span>
+    </div>
   }
 
   return (
@@ -42,6 +46,7 @@ function App() {
         <p>{productList} Current Products Created</p> --> */
         }
       </header>
+      {window.friconix_update()}
     </div>
   );
 }

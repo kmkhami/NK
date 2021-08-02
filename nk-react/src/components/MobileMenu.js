@@ -14,13 +14,13 @@ class MobileMenu extends Component {
             <div class="sliding-flexbox" className={visibility} id="flyoutMenu"> 
                 <div id='flyout-nav'>
                     <div id="flyout-nav-items"> 
-                        <h2><a href="#">Home</a></h2>
-                        <MenuItem />
-                        <h2><a href="#">Contact</a></h2>
-                        <h2><a href="#">Search</a></h2>
+                        <MenuItem extra_class="no-border" image_background="#E85D00" label="home" />
+                        <MenuItem label="about" image_background="#FC2B2B" />
+                        <MenuItem label="contact" image_background="#00ACCC" />
+                        <MenuItem label="search" image_background="#9EBF00" />
                     </div>
                     <div id="flyout-nav-fixed"> 
-                        <h2><a href='#'> test </a></h2>
+                        <MenuItem icon_class="fi-xnsuxl-dot-information fi-2x icon" label="help" />
                     </div> 
                 </div> 
                 <div id="flyout-close" onMouseDown={this.props.handleMouseDown}>
