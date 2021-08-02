@@ -7,9 +7,9 @@ import HamburgerButton from './HamburgerButton';
 import MobileMenu from './MobileMenu';
 
 class Navbar extends Component {
-    constructor(props, context) {
-        super(props, context); 
-    
+    constructor(props) {
+        super(props); 
+
         this.state = {
             visible: false
         };
