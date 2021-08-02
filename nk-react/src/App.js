@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar.js'
 import './stylesheets/App.css';
