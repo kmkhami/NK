@@ -1,7 +1,5 @@
 import React, { Component } from "react"; 
 import '../stylesheets/MenuItem.css'; 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 class MenuItem extends Component {
 
@@ -13,7 +11,7 @@ class MenuItem extends Component {
         else if(props.icon_class === '') {
             return <img style={{backgroundColor: props.image_background}} class="slide-media" alt="" src={props.image_url} />; 
         }
-        return <i class="slide-media" id="menu-item-icon" class={props.icon_class}></i>; 
+        return <i class={"slide-media " + props.icon_class} id="menu-item-icon"></i>; 
     }
 
     sub_menu_button = (props) => {

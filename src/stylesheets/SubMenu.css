@@ -6,7 +6,7 @@
 }
 
 #sub-flyout-menu {
-    width: 80vw;
+    width: 82vw;
     height: 60vh;
     position: fixed;
     top: 0;
@@ -25,7 +25,7 @@
 }
 
 #sub-flyout-menu.sub-hide {
-    transform: translate3d(-82vw, 0, 0);
+    transform: translate3d(-85vw, 0, 0);
 }
 
 #sub-flyout-menu.sub-show {

@@ -19,7 +19,7 @@
 }
 
 #flyout-nav {
-    width: 80%; 
+    width: 82vw; 
     background-color: var(--floral-white); 
     box-shadow: 3px 0px 2rem rgba(0, 0, 0, .75);
     display: flex; 
@@ -34,6 +34,7 @@
 #flyout-nav-fixed {
     height: 40%; 
     background-color: var(--light-grey);
+    padding-top: 20px; 
 }
 
 #FC-times {
@@ -46,7 +47,7 @@
 }
 
 #flyout-close {
-    width: 20%; 
+    width: 18vw; 
     background-color: rgba(0, 0, 0, .5);
     text-align: center;
 }
