@@ -5,6 +5,7 @@ import { faUserCircle } from '@fortawesome/free-regular-svg-icons';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import HamburgerButton from './HamburgerButton';
 import MobileMenu from './MobileMenu';
+import { NavLink } from 'react-router-dom'; 
 
 class Navbar extends Component {
     constructor(props) {
@@ -39,9 +40,9 @@ class Navbar extends Component {
                 </div> 
                 <MobileMenu handleMouseDown={this.handleMouseDown} menuVisibility={this.state.visible}/>
                 <MobileMenu />
-                <span id="text-logo"><a id="text-logo" href="localhost:3000"> NK </a></span>
+                <span id="text-logo"><NavLink id='text-logo' to='/'> NK </NavLink></span>
                 <div class='nav-menu-desktop'>
-                    <a href='localhost:3000'> shop </a>
+                    <NavLink to='/products'> shop </NavLink>
                     <a href='localhost:3000'> affiliates </a>
                     <a href='localhost:3000'> articles </a>
                     <a href='localhost:3000'> help </a>
