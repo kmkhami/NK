@@ -1,8 +1,13 @@
-import logo from './logo.svg';
 import React, { useState, useEffect } from 'react';
-import Navbar from './components/Navbar.js'
+import Navbar from './components/Navbar.js';
+import Products from './pages/Products';
+import Home from './pages/Home';
 import './stylesheets/App.css';
 import axios from 'axios'; 
+import {
+  Switch,
+  Route
+} from "react-router-dom";
 
 function App() {
   const [localMsg, setLocalMsg] = useState(null);
@@ -41,6 +46,14 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Navbar />
+        <Switch>
+          <Route path = '/products'> 
+            <Products />
+          </Route>  
+          <Route path = '/'>
+            <Home />
+          </Route> 
+        </Switch> 
         {/*img src={logo} className="App-logo" alt="logo" />
         <p>{!localMsg ? "Loading..." : localMsg}</p>
         <p>{productList} Current Products Created</p> --> */

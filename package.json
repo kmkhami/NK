@@ -2,7 +2,6 @@
   "name": "nk-react",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:3001",
   "dependencies": {
     "@chec/commerce.js": "^2.7.2",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
@@ -17,6 +16,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2"
   },
